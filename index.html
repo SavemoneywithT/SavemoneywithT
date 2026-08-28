@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#d3133a">
+    <meta name="description" content="Lokale Supermarkt-Angebote für Aschheim und Dornach.">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meine Angebote</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">ASCHHEIM &amp; DORNACH</p>
+        <h1>Meine Angebote</h1>
+        <p id="week-label" class="week-label"></p>
+      </header>
+      <section class="market-picker" aria-label="Markt auswählen">
+        <button class="market active" data-store="all">Beide Märkte</button>
+        <button class="market" data-store="562345">Aschheim</button>
+        <button class="market" data-store="440674">Dornach</button>
+      </section>
+      <section class="notice" aria-live="polite"><span class="notice-dot"></span><span id="status-copy"></span></section>
+      <section aria-labelledby="hits-heading">
+        <div class="section-heading"><h2 id="hits-heading">Im Angebot</h2><span id="hit-count" class="count"></span></div>
+        <div id="offers" class="offer-list"></div>
+      </section>
+      <section aria-labelledby="watch-heading">
+        <div class="section-heading"><h2 id="watch-heading">Ich beobachte</h2><span class="count">9 Gruppen</span></div>
+        <div id="watchlist" class="watch-list"></div>
+      </section>
+    </main>
+    <nav class="bottom-nav" aria-label="Hauptnavigation"><a class="nav-item selected" href="#">Angebote</a><a class="nav-item" href="#watch-heading">Merkliste</a><a class="nav-item" href="#">Verlauf</a></nav>
+    <script src="data.js"></script><script src="app.js?v=2"></script>
+  </body>
+</html>

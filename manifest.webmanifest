@@ -1,0 +1,10 @@
+{
+  "name": "Meine Angebote",
+  "short_name": "Angebote",
+  "description": "Lokale Supermarkt-Angebote für Aschheim und Dornach.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f8",
+  "theme_color": "#d3133a",
+  "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}

@@ -1,0 +1,36 @@
+:root { --red:#d3133a; --ink:#1d2430; --muted:#667085; --canvas:#f7f7f8; --card:#fff; --line:#e6e7eb; }
+* { box-sizing:border-box; }
+html { background:var(--canvas); scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--canvas); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.app-shell { max-width:600px; min-height:100vh; margin:auto; padding:calc(26px + env(safe-area-inset-top)) 18px calc(100px + env(safe-area-inset-bottom)); }
+.hero { padding:6px 4px 21px; }
+.eyebrow { margin:0 0 6px; font-size:11px; font-weight:800; letter-spacing:.12em; color:var(--red); }
+h1 { margin:0; font-size:32px; letter-spacing:-.04em; }
+.week-label { margin:6px 0 0; color:var(--muted); font-size:15px; }
+.market-picker { display:flex; gap:8px; overflow:auto; margin:0 -2px 18px; padding:2px; }
+.market { border:1px solid var(--line); border-radius:999px; padding:10px 14px; background:#fff; color:var(--ink); font:600 14px inherit; white-space:nowrap; }
+.market.active { color:#fff; border-color:var(--red); background:var(--red); }
+.notice { display:flex; align-items:flex-start; gap:9px; margin:0 0 26px; padding:12px; border-radius:12px; background:#fff2f4; color:#783245; font-size:13px; line-height:1.4; }
+.notice-dot { flex:0 0 8px; width:8px; height:8px; margin-top:5px; border-radius:50%; background:var(--red); }
+.section-heading { display:flex; align-items:baseline; justify-content:space-between; margin:0 2px 10px; }
+h2 { margin:0; font-size:18px; letter-spacing:-.02em; }
+.count { color:var(--muted); font-size:13px; }
+.offer-list { display:grid; gap:10px; }
+.offer-card { display:flex; justify-content:space-between; gap:10px; min-height:122px; padding:16px; overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--card); box-shadow:0 1px 2px rgba(16,24,40,.04); }
+.offer-card.sweet { border-left:5px solid #f55e81; }
+.offer-card.ice { border-left:5px solid #58aee8; }
+.group { margin:0 0 4px; color:var(--red); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; }
+.offer-card h3 { max-width:245px; margin:0; font-size:17px; line-height:1.2; letter-spacing:-.02em; }
+.detail,.market-name { margin:7px 0 0; color:var(--muted); font-size:13px; }
+.market-name { margin-top:5px; font-weight:600; color:#475467; }
+.price { align-self:flex-start; margin:1px 0 0; color:var(--red); font-size:20px; font-weight:800; letter-spacing:-.04em; white-space:nowrap; }
+.watch-list { display:grid; gap:1px; overflow:hidden; margin-top:0; border:1px solid var(--line); border-radius:16px; background:var(--line); }
+.watch-item { display:flex; align-items:center; justify-content:space-between; gap:10px; min-height:52px; padding:12px 14px; background:#fff; font-size:14px; font-weight:600; }
+.pill { padding:5px 8px; border-radius:999px; font-size:11px; white-space:nowrap; }
+.pill.found { color:#087443; background:#dff8eb; }
+.pill.open { color:#6d5c18; background:#fbf1c9; }
+.empty { padding:15px; border-radius:14px; background:#fff; color:var(--muted); font-size:14px; }
+.bottom-nav { position:fixed; right:0; bottom:0; left:0; display:flex; justify-content:center; gap:34px; height:70px; padding-bottom:env(safe-area-inset-bottom); border-top:1px solid var(--line); background:rgba(255,255,255,.96); backdrop-filter:blur(16px); }
+.nav-item { padding-top:17px; color:var(--muted); text-decoration:none; font-size:12px; font-weight:700; }
+.nav-item.selected { color:var(--red); }
+@media (min-width:640px) { .app-shell { padding-right:28px; padding-left:28px; } }

@@ -1,16 +1,14 @@
-## Hi there 👋
+# Meine Angebote – Handy-App
 
-<!--
-**SavemoneywithT/SavemoneywithT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Das ist eine installierbare Web-App für iPhone und Android. Sie enthält die bestätigten REWE-Angebote für Aschheim und Dornach und lässt die beiden Märkte getrennt anzeigen.
 
-Here are some ideas to get you started:
+## Auf dem Handy installieren
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Die Dateien müssen zuerst über eine HTTPS-Adresse erreichbar sein.
+
+- iPhone: Link in Safari öffnen → Teilen → **Zum Home-Bildschirm**.
+- Android: Link in Chrome öffnen → Menü → **App installieren** oder **Zum Startbildschirm hinzufügen**.
+
+Die Anwendung startet danach wie eine normale App und zeigt die zuletzt gespeicherten Daten auch ohne Verbindung. Der nächste technische Schritt ist das Veröffentlichen auf einem kleinen Hosting, damit Handy und Angebotserfassung dieselben Daten verwenden können.
+
+Für GitHub Pages alle Dateien dieses Ordners einschließlich `.nojekyll` direkt in das Repository hochladen.
