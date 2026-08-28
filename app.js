@@ -18,6 +18,20 @@
     document.querySelectorAll(".market").forEach(item => item.classList.toggle("active", item === button));
     showOffers();
   }));
+  let installPrompt;
+  const installButton = document.querySelector("#install-button");
+  window.addEventListener("beforeinstallprompt", event => {
+    event.preventDefault();
+    installPrompt = event;
+    installButton.hidden = false;
+  });
+  installButton.addEventListener("click", async () => {
+    if (!installPrompt) return;
+    installPrompt.prompt();
+    await installPrompt.userChoice;
+    installPrompt = undefined;
+    installButton.hidden = true;
+  });
   showOffers();
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("service-worker.js");
 })();

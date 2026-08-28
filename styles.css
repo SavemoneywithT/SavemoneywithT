@@ -7,6 +7,7 @@ body { margin:0; color:var(--ink); background:var(--canvas); font-family:Inter,u
 .eyebrow { margin:0 0 6px; font-size:11px; font-weight:800; letter-spacing:.12em; color:var(--red); }
 h1 { margin:0; font-size:32px; letter-spacing:-.04em; }
 .week-label { margin:6px 0 0; color:var(--muted); font-size:15px; }
+.install-button { margin-top:14px; padding:10px 14px; border:0; border-radius:999px; background:var(--red); color:#fff; font:700 14px inherit; }
 .market-picker { display:flex; gap:8px; overflow:auto; margin:0 -2px 18px; padding:2px; }
 .market { border:1px solid var(--line); border-radius:999px; padding:10px 14px; background:#fff; color:var(--ink); font:600 14px inherit; white-space:nowrap; }
 .market.active { color:#fff; border-color:var(--red); background:var(--red); }
